@@ -21,6 +21,7 @@ iex> {:ok, now} = DateFormat.parse("2016-01-01", "{YYYY}-{0M}-{0D}")
 ...> {:ok, then} = DateFormat.parse("2015-01-01", "{YYYY}-{0M}-{0D}")
 ...> TimeDistance.distance_in_words(then, now)
 "1 year ago"
+
 ```
 
 ## Using native elixir dates
@@ -30,6 +31,7 @@ iex> now = {{2016, 1, 1}, {14, 18, 38}}
 ...> then = {{2015, 12, 1}, {14, 18, 38}}
 ...> TimeDistance.distance_in_words(then, now)
 "4 weeks ago"
+
 ```
 
 """
