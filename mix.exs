@@ -7,9 +7,17 @@ defmodule TimeDistance.Mixfile do
      elixir: "~> 1.2",
      build_embedded: Mix.env == :prod,
      start_permanent: Mix.env == :prod,
-     deps: deps]
+     deps: deps,
+     description: "Show the difference between two specified times, or between a specified time and now in words (eg. 1 week ago)",
+     package: [
+       maintainers: ["Alan Harper"],
+       licenses: ["MIT"],
+       links: %{"GitHub" => "https://github.com/aussiegeek/time_distance"},
+     ],
+    ]
   end
 
+  
   # Configuration for the OTP application
   #
   # Type "mix help compile.app" for more information
