@@ -1,6 +1,7 @@
 # TimeDistance
 
 [![Build Status](https://travis-ci.org/aussiegeek/time_distance.svg?branch=master)](https://travis-ci.org/aussiegeek/time_distance)
+[![Inline docs](http://inch-ci.org/github/aussiegeek/time_distance.svg?branch=master)](http://inch-ci.org/github/aussiegeek/time_distance)
 
 Show the difference between two specified times, or between a specified time and now
 
