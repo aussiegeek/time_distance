@@ -44,7 +44,7 @@ iex> now = {{2016, 1, 1}, {14, 18, 38}}
   defp seconds(1, _, _), do: "1 second"
   defp seconds(n, _, _) when n >= 2 and n < 60, do: "#{n} seconds"
   defp seconds(n, _, _) when n <= -2 and n > -60, do: "#{abs(n)} seconds ago"
-  defp seconds(n, then, now) when n >=60 or n <= -60, do: minutes(Date.diff(now,then, :mins), then, now)
+  defp seconds(n, then, now) when n >= 60 or n <= -60, do: minutes(Date.diff(now,then, :mins), then, now)
 
   defp minutes(-1, _, _), do: "1 minute ago"
   defp minutes(1, _, _), do: "1 minute"
