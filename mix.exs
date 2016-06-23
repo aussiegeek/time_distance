@@ -17,7 +17,7 @@ defmodule TimeDistance.Mixfile do
     ]
   end
 
-  
+
   # Configuration for the OTP application
   #
   # Type "mix help compile.app" for more information
@@ -28,7 +28,7 @@ defmodule TimeDistance.Mixfile do
   defp deps do
     [
       {:timex, "~> 1.0"},
-      {:credo, "~> 0.2", only: [:dev, :test]},
+      {:credo, "~> 0.4.5", only: [:dev, :test]},
       {:ex_doc, ">= 0.11.4", only: [:dev]},
       {:inch_ex, only: :docs},
     ]
